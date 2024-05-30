@@ -1,0 +1,49 @@
+.nav {
+    @apply fixed left-0 top-0 bottom-0 w-[300px] border-r border-r-black/10 bg-white py-4 px-3 overflow-y-auto;
+
+    .container {
+        .logo {
+            @apply flex gap-1 items-center mb-[41px];
+
+            .h2 {
+                @apply text-[#0AC60A] text-2xl;
+            }
+        }
+
+        .info {
+            @apply flex flex-col gap-3 mb-[130px];
+
+            .info-item {
+                @apply flex gap-6 items-center px-3 py-4 rounded-md font-bold text-lg;
+
+                svg {
+                    @apply text-xl
+                }
+            }
+
+            .index-color {
+                @apply bg-[#0AC60A] text-white;
+            }
+
+            .separator {
+                @apply border-b border-b-black/15 h-[10px] w-full my-4
+            }
+        }
+
+        .mode {
+            @apply flex justify-between items-center px-3;
+
+            h3 {
+                @apply text-lg font-normal
+            }
+
+            .radio {
+                @apply border border-black/35 rounded-full w-[47px] h-[28px] flex items-center cursor-pointer;
+
+                .circle {
+                    @apply w-[20px] h-[20px] rounded-full bg-stone-500 ml-[3px] mr-[3px];
+                }
+            }
+        }
+    }
+}

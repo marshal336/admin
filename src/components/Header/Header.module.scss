@@ -1,0 +1,35 @@
+.header {
+    @apply w-full fixed left-0 top-0 right-0 border-b border-b-black/10 p-[15px];
+
+    .container {
+        @apply flex justify-end items-center max-w-[1700px] mx-auto;
+
+        .info {
+            @apply flex items-center gap-6;
+
+            .messages {
+                @apply relative;
+
+                .message {
+                    @apply absolute rounded-full bg-red-600 h-[9px] w-[9px] top-0 right-[2px];
+                }
+            }
+
+            .logo {
+                @apply bg-black/25 rounded-full;
+            }
+
+            svg {
+                @apply text-2xl cursor-pointer;
+            }
+
+            .rotate-on {
+                @apply rotate-180
+            }
+
+            .rotate-off {
+                @apply rotate-0
+            }
+        }
+    }
+}
