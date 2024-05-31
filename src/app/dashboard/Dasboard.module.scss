@@ -5,14 +5,14 @@
         @apply flex flex-col gap-2 max-w-[1300px] px-5;
 
         .h1 {
-            @apply text-4xl font-semibold text-stone-800;
+            @apply text-4xl font-semibold text-[--foreground];
         }
 
         .Grid {
             @apply grid grid-cols-4 gap-4;
 
             .gridItem {
-                @apply bg-white rounded-md px-[20px] py-[45px] flex flex-col gap-3;
+                @apply bg-[--background] rounded-md px-[20px] py-[45px] flex flex-col gap-3;
 
                 .h2 {
                     @apply font-normal;
@@ -22,7 +22,7 @@
                     @apply flex items-center gap-2;
 
                     .h1 {
-                        @apply text-4xl font-bold text-black/65;
+                        @apply text-4xl font-bold text-[--foreground];
                     }
 
                     .p {
@@ -37,10 +37,10 @@
 
 
             .bar {
-                @apply col-start-1 col-end-3 p-4 bg-white rounded-md flex flex-col gap-12 3xl:w-[807px] w-auto;
+                @apply col-start-1 col-end-3 p-4 bg-[--background] rounded-md flex flex-col gap-12 3xl:w-[807px] w-auto;
 
                 .info {
-                    @apply flex justify-between items-center;
+                    @apply flex justify-between items-center border-b-[--radio-border] border-b pb-3;
 
                     .title {
                         @apply font-semibold;
@@ -65,20 +65,21 @@
             }
 
             .pie {
-                @apply bg-white p-5 col-start-3 col-end-5 rounded-md 3xl:w-[434px] 3xl:ml-[187px] m-0 w-auto flex flex-col 3xl:gap-10 gap-4;
+                @apply bg-[--background] p-5 col-start-3 col-end-5 rounded-md 3xl:w-[434px] 3xl:ml-[187px] m-0 w-auto flex flex-col 3xl:gap-10 gap-4;
 
                 .info {
-                    @apply flex justify-between;
+                    @apply flex justify-between border-b-[--radio-border] border-b pb-1;
 
                     .h3 {
-                        @apply text-xl font-semibold
+                        @apply text-lg font-semibold
                     }
 
                     .dots {
-                        @apply rotate-90 text-2xl cursor-pointer
+                        @apply rotate-90 text-lg cursor-pointer
                     }
 
                 }
+
                 .pieWrapper {
                     @apply 3xl:max-w-[283px] max-w-[183px] flex mx-auto;
                 }
@@ -95,6 +96,68 @@
 
                         .p {
                             @apply text-sm;
+                        }
+                    }
+                }
+            }
+
+            .patient {
+                @apply col-start-1 col-end-3 p-4 bg-[--background] rounded-md flex flex-col gap-12 3xl:w-[807px] w-auto;
+
+                .info {
+                    @apply flex justify-between items-center border-b-[--radio-border] border-b mb-5;
+                }
+            }
+
+            .appointments {
+                @apply bg-[--background] p-5 col-start-3 col-end-5 rounded-md 3xl:w-[434px] 3xl:ml-[187px] m-0 w-auto flex flex-col 3xl:gap-10 gap-4;
+
+                .info {
+                    @apply flex justify-between border-b-[--radio-border] border-b pb-[7px];
+
+                    .h3 {
+                        @apply text-lg font-semibold
+                    }
+
+                    .dots {
+                        @apply rotate-90 text-lg cursor-pointer
+                    }
+
+                }
+
+                .doctors {
+                    @apply flex flex-col gap-4 max-h-[282px] overflow-y-auto;
+                    .doctor {
+                        @apply flex justify-between items-center pr-4;
+                        .doctorLogo{
+                            @apply rounded-full border-[2px] border-[#0AC60A];
+                        }
+                        .doctorInfo {
+                            @apply flex flex-col gap-1;
+
+                            .doctorName {
+                                @apply font-semibold text-base
+                            }
+
+                            .doctorSpetialty {
+                                @apply font-normal text-[15px]
+                            }
+
+                            .workTime {
+                                @apply flex gap-2 items-center
+                            }
+                        }
+                    }
+                }
+
+                .btns {
+                    @apply flex flex-col gap-3;
+
+                    .btn {
+                        @apply flex gap-2 items-center;
+
+                        svg {
+                            @apply p-1 text-xl rounded-full;
                         }
                     }
                 }

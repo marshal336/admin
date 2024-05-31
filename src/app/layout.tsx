@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.scss";
 import Header from "~/components/Header";
 import Sidebar from "~/components/Sidebar";
+import { ThemeProvider } from "~/providers/Theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} flex gap-5 relative`}>
-        <Header />
-        <Sidebar />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          <Sidebar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

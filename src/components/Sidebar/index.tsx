@@ -4,11 +4,22 @@ import Image from 'next/image'
 import styles from './Sidebar.module.scss'
 import Link from 'next/link';
 import { Links } from './utils/links';
+import { useTheme } from 'next-themes';
 
 
 export default function Sidebar() {
+    const { setTheme } = useTheme()
     const [index, setIndex] = React.useState(0)
     const [circle, setCircle] = React.useState(true)
+
+    function handleTheme() {
+        setCircle(!circle)
+        if(circle) {
+            setTheme('dark')
+        } else {
+            setTheme('light')
+        }
+    }
 
     return (
         <nav className={styles.nav}>
@@ -39,7 +50,7 @@ export default function Sidebar() {
                     <h3>Dark Mode</h3>
                     <div className={`${styles.radio} 
                     ${circle ? 'justify-start' : 'justify-end'}`}
-                        onClick={() => setCircle(!circle)}>
+                        onClick={handleTheme}>
                         <div className={`${styles.circle}`} />
                     </div>
                 </div>

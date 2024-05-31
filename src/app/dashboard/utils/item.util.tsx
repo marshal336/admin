@@ -1,4 +1,4 @@
-
+import { Card} from "~/components/ui/card"
 interface IItemProps {
     styles: any
     title: string
@@ -8,7 +8,7 @@ interface IItemProps {
 
 export default function Item({ styles, title, h1, p }: IItemProps) {
     return (
-        <div className={styles.gridItem}>
+        <Card className={styles.gridItem}>
             <h2 className={styles.h2}>{title}</h2>
             <div className={styles.prices}>
                 <h1 className={styles.h1}>{h1}</h1>
@@ -26,6 +26,6 @@ export default function Item({ styles, title, h1, p }: IItemProps) {
                 }`}>{p}</p>
             </div>
             <p className={styles.p}>Compared to (2300 last quarter)</p>
-        </div>
+        </Card>
     )
 };

@@ -1,10 +1,18 @@
 'use client'
+import React from 'react';
 import styles from './Dasboard.module.scss'
-import Item from './utils/item'
+import Doctor from './utils/doctor.util';
+import Item from './utils/item.util'
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, ArcElement } from 'chart.js'
 import { Bar, Pie } from "react-chartjs-2";
-import { options } from './utils/options';
-import { dataBar, dataPie } from './utils/data';
+import { options } from './utils/options.utils';
+import { dataBar, dataPie, users } from './utils/data';
+import { Card } from "~/components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs"
+import { DataTable } from './utils/table.util';
+import { columns } from './utils/colomns';
+
+
 
 ChartJS.register(
     CategoryScale,
@@ -14,6 +22,7 @@ ChartJS.register(
 )
 
 export default function Dashboard() {
+    const [index, setIndex] = React.useState(0)
     return (
         <div className={styles.root}>
             <div className={styles.container}>
@@ -23,7 +32,7 @@ export default function Dashboard() {
                     <Item styles={styles} title='No of Admitted Patients' h1='3270' p='-2.5%' />
                     <Item styles={styles} title='Income Statistics' h1='1270' p='-3.0%' />
                     <Item styles={styles} title='No of Admitted Patients' h1='2270' p='-4.6%' />
-                    <div className={styles.bar}>
+                    <Card className={styles.bar}>
                         <div className={styles.info}>
                             <h1 className={styles.title}>Finances</h1>
                             <div className={styles.incomeExpence}>
@@ -38,8 +47,8 @@ export default function Dashboard() {
                         <div>
                             <Bar data={dataBar} options={{ ...options, responsive: true }} />
                         </div>
-                    </div>
-                    <div className={styles.pie}>
+                    </Card>
+                    <Card className={styles.pie}>
                         <div className={styles.info}>
                             <h3 className={styles.h3}>Income Statistics</h3>
                             <div className={styles.dots}>...</div>
@@ -55,9 +64,44 @@ export default function Dashboard() {
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </Card>
+                    <Card className={styles.patient}>
+                        <Tabs defaultValue="Weekly">
+                            <div className={styles.info}>
+                                <h1 className='font-semibold text-lg'>Patient List</h1>
+                                <TabsList>
+                                    {["Weekly", "Monthly", 'Quarterly'].map((el, i) => (
+                                        <div className="relative" key={i} onClick={() => setIndex(i)}>
+                                            <TabsTrigger value={el} >{el}</TabsTrigger>
+                                            {index === i && <div className="absolute bottom-0 h-[2px] w-full bg-main rounded-md" />}
+                                        </div>
+                                    ))}
+                                </TabsList>
+                            </div>
+                            <TabsContent value="Weekly">
+                                <DataTable columns={columns} data={users} />
+                            </TabsContent>
+                            <TabsContent value="Monthly">Change your password here.</TabsContent>
+                            <TabsContent value="Quarterly">Data</TabsContent>
+                        </Tabs>
+                    </Card>
+                    <Card className={styles.appointments}>
+                        <div className={styles.info}>
+                            <h3 className={styles.h3}>Appointments</h3>
+                            <div className={styles.dots}>...</div>
+                        </div>
+                        <div className={styles.doctors}>
+                            <Doctor styles={styles} />
+                            <Doctor styles={styles} />
+                            <Doctor styles={styles} />
+                            <Doctor styles={styles} />
+                            <Doctor styles={styles} />
+                            <Doctor styles={styles} />
+                            <Doctor styles={styles} />
+                        </div>
+                    </Card>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 };

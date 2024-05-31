@@ -1,5 +1,5 @@
 .nav {
-    @apply z-[2] min-w-[300px] border-r border-r-black/10 bg-white py-4 px-3 overflow-y-auto rounded-md;
+    @apply  z-[2] min-w-[300px] border-r border-r-[--radio-border] py-4 px-3 overflow-y-auto bg-[--background] ;
 
     .container {
         .logo {
@@ -26,7 +26,7 @@
             }
 
             .separator {
-                @apply border-b border-b-black/15 h-[10px] w-full my-4
+                @apply border-b border-b-[--radio-border] h-[10px] w-full my-4
             }
         }
 
@@ -38,10 +38,10 @@
             }
 
             .radio {
-                @apply border border-black/35 rounded-full w-[47px] h-[28px] flex items-center cursor-pointer;
+                @apply border border-[--radio-border] rounded-full w-[47px] h-[28px] flex items-center cursor-pointer;
 
                 .circle {
-                    @apply w-[20px] h-[20px] rounded-full bg-stone-500 ml-[3px] mr-[3px];
+                    @apply w-[20px] h-[20px] rounded-full bg-[--radio] ml-[3px] mr-[3px];
                 }
             }
         }
