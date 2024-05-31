@@ -1,12 +1,12 @@
 .nav {
-    @apply fixed left-0 top-0 bottom-0 w-[300px] border-r border-r-black/10 bg-white py-4 px-3 overflow-y-auto;
+    @apply z-[2] min-w-[300px] border-r border-r-black/10 bg-white py-4 px-3 overflow-y-auto rounded-md;
 
     .container {
         .logo {
             @apply flex gap-1 items-center mb-[41px];
 
             .h2 {
-                @apply text-[#0AC60A] text-2xl;
+                @apply text-main text-2xl;
             }
         }
 
@@ -14,7 +14,7 @@
             @apply flex flex-col gap-3 mb-[130px];
 
             .info-item {
-                @apply flex gap-6 items-center px-3 py-4 rounded-md font-bold text-lg;
+                @apply flex gap-6 items-center px-3 py-4 rounded-md font-bold text-lg hover:bg-main hover:text-white;
 
                 svg {
                     @apply text-xl
@@ -22,7 +22,7 @@
             }
 
             .index-color {
-                @apply bg-[#0AC60A] text-white;
+                @apply bg-main text-white;
             }
 
             .separator {
@@ -31,7 +31,7 @@
         }
 
         .mode {
-            @apply flex justify-between items-center px-3;
+            @apply flex justify-between items-center px-3 mb-[40px];
 
             h3 {
                 @apply text-lg font-normal

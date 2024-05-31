@@ -17,7 +17,7 @@ export default function Header() {
                         <div className={styles.message} />
                     </div>
                     <Image
-                        src={''}
+                        src={'/my.jpg'}
                         alt=''
                         width={51}
                         height={51}

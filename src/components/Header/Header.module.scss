@@ -1,8 +1,8 @@
 .header {
-    @apply w-full fixed left-0 top-0 right-0 border-b border-b-black/10 p-[15px];
+    @apply w-full border-b border-b-black/10 py-[15px] px-4 bg-white z-[1] absolute top-0 left-0 right-0 ;
 
     .container {
-        @apply flex justify-end items-center max-w-[1700px] mx-auto;
+        @apply flex justify-end items-center max-w-[1600px];
 
         .info {
             @apply flex items-center gap-6;
@@ -16,7 +16,7 @@
             }
 
             .logo {
-                @apply bg-black/25 rounded-full;
+                @apply rounded-full border-[2px] border-[#0AC60A];
             }
 
             svg {

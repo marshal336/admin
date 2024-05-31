@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+// @layer base {
+//     body {
+//         @apply bg-[#000000] overflow-x-hidden
+//     }
+// }
+@layer base {
+    body {
+        @apply bg-[bg-[#f3fff3]] overflow-x-hidden
+    }
+}

@@ -8,7 +8,7 @@ import { CiLogout } from "react-icons/ci";
 
 
 export const Links = [
-    { icon: <MdOutlineDashboard />, title: 'Dashboard', link: '' },
+    { icon: <MdOutlineDashboard />, title: 'Dashboard', link: 'dashboard' },
     { icon: <LuUserSquare2 />, title: 'Patients management', link: '' },
     { icon: <FaRegCalendarAlt />, title: 'Appointments', link: '' },
     { icon: <VscSettings />, title: 'Transactions', link: '' },

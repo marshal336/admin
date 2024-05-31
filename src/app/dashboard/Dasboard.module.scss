@@ -1,0 +1,104 @@
+.root {
+    @apply mt-[100px] w-full;
+
+    .container {
+        @apply flex flex-col gap-2 max-w-[1300px] px-5;
+
+        .h1 {
+            @apply text-4xl font-semibold text-stone-800;
+        }
+
+        .Grid {
+            @apply grid grid-cols-4 gap-4;
+
+            .gridItem {
+                @apply bg-white rounded-md px-[20px] py-[45px] flex flex-col gap-3;
+
+                .h2 {
+                    @apply font-normal;
+                }
+
+                .prices {
+                    @apply flex items-center gap-2;
+
+                    .h1 {
+                        @apply text-4xl font-bold text-black/65;
+                    }
+
+                    .p {
+                        @apply rounded-full w-[66px] text-center text-xs py-1;
+                    }
+                }
+
+                .p {
+                    @apply font-light;
+                }
+            }
+
+
+            .bar {
+                @apply col-start-1 col-end-3 p-4 bg-white rounded-md flex flex-col gap-12 3xl:w-[807px] w-auto;
+
+                .info {
+                    @apply flex justify-between items-center;
+
+                    .title {
+                        @apply font-semibold;
+                    }
+
+                    .incomeExpence {
+                        @apply flex justify-center items-center gap-3;
+
+                        .item {
+                            @apply flex items-center gap-3;
+
+                            .circle {
+                                @apply rounded-full h-[10px] w-[10px];
+                            }
+
+                            .h4 {
+                                @apply text-stone-300
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pie {
+                @apply bg-white p-5 col-start-3 col-end-5 rounded-md 3xl:w-[434px] 3xl:ml-[187px] m-0 w-auto flex flex-col 3xl:gap-10 gap-4;
+
+                .info {
+                    @apply flex justify-between;
+
+                    .h3 {
+                        @apply text-xl font-semibold
+                    }
+
+                    .dots {
+                        @apply rotate-90 text-2xl cursor-pointer
+                    }
+
+                }
+                .pieWrapper {
+                    @apply 3xl:max-w-[283px] max-w-[183px] flex mx-auto;
+                }
+
+                .stats {
+                    @apply flex justify-between gap-3;
+
+                    .item {
+                        @apply w-[139px] flex flex-col gap-2 3xl:p-0 px-3;
+
+                        .h2 {
+                            @apply text-xl text-main;
+                        }
+
+                        .p {
+                            @apply text-sm;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
