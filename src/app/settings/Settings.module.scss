@@ -1,0 +1,39 @@
+.root {
+    @apply relative xl:left-[300px] left-[100px] top-[100px] max-w-[1300px] bg-[--bg];
+
+    .container {
+        @apply p-5 flex gap-7;
+
+        .one {
+            @apply p-5 flex flex-col gap-7 w-[607px] border-r border-r-[--radio-border];
+
+            .h2 {
+                @apply text-3xl font-semibold
+            }
+
+            .items {
+                @apply flex flex-col;
+
+                .input {
+                    @apply relative pb-4;
+
+                    input {
+                        @apply pl-[45px] p-8
+                    }
+
+                    .icon {
+                        @apply absolute top-[22px] left-[13px] text-xl
+                    }
+                }
+
+                .links {
+                    @apply flex flex-col min-w-full;
+
+                    .link {
+                        @apply py-7 px-4 min-w-full hover:bg-main/25 hover:text-main rounded-md flex justify-between items-center cursor-pointer hover:border-r-[8px] border-r-green-700;
+                    }
+                }
+            }
+        }
+    }
+}

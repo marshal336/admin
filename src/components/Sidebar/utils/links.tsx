@@ -17,6 +17,6 @@ export const Links = [
     { icon: <SiSimpleanalytics />, title: 'Analytics', link: '' },
     { icon: <IoHelpCircleOutline />, title: 'Help & Support', link: '' },
     { icon: <FaRegUser />, title: 'Profile', link: '' },
-    { icon: <IoSettingsOutline />, title: 'Settings', link: '' },
+    { icon: <IoSettingsOutline />, title: 'Settings', link: 'settings' },
     { icon: <CiLogout />, title: 'Log Out', },
 ]
