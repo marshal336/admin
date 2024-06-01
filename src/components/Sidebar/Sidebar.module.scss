@@ -1,23 +1,31 @@
 .nav {
-    @apply  z-[2] min-w-[300px] border-r border-r-[--radio-border] py-4 px-3 overflow-y-auto bg-[--background] ;
+    @apply fixed top-0 left-0 bottom-0 z-[2] border-r border-r-[--radio-border] py-4 px-3 overflow-y-auto bg-[--bg] text-[--text] overflow-x-hidden xl:w-[300px];
 
     .container {
         .logo {
             @apply flex gap-1 items-center mb-[41px];
 
             .h2 {
-                @apply text-main text-2xl;
+                @apply text-main text-2xl xl:block;
+            }
+
+            .img {
+                @apply w-[50px] cursor-pointer;
             }
         }
 
         .info {
-            @apply flex flex-col gap-3 mb-[130px];
+            @apply flex flex-col gap-3 3xl:mb-[130px] mb-[70px];
 
             .info-item {
-                @apply flex gap-6 items-center px-3 py-4 rounded-md font-bold text-lg hover:bg-main hover:text-white;
+                @apply flex xl:justify-start h-[55px] gap-6 items-center px-3 py-3 rounded-md font-bold text-lg hover:bg-main hover:text-white;
 
                 svg {
-                    @apply text-xl
+                    @apply text-xl;
+                }
+
+                .h3 {
+                    @apply xl:block
                 }
             }
 
@@ -31,10 +39,10 @@
         }
 
         .mode {
-            @apply flex justify-between items-center px-3 mb-[40px];
+            @apply flex justify-between items-center px-3 3xl:mb-[40px] mb-2 xl:flex-row;
 
-            h3 {
-                @apply text-lg font-normal
+            .h3 {
+                @apply xl:text-lg;
             }
 
             .radio {

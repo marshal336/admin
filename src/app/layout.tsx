@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex gap-5 relative`}>
+      <body className={`${inter.className} relative`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

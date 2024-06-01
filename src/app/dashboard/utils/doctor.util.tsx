@@ -27,7 +27,7 @@ export default function Doctor({ styles }: { styles: any }) {
             <div className={styles.btns}>
                 {status.map((el, i) => (
                     <div className={styles.btn} key={i}>
-                        <h5>{el.title}</h5>
+                        <h5 className={styles.h5}>{el.title}</h5>
                         {el.el}
                     </div>
                 ))}

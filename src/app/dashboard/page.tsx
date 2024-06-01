@@ -73,7 +73,7 @@ export default function Dashboard() {
                                     {["Weekly", "Monthly", 'Quarterly'].map((el, i) => (
                                         <div className="relative" key={i} onClick={() => setIndex(i)}>
                                             <TabsTrigger value={el} >{el}</TabsTrigger>
-                                            {index === i && <div className="absolute bottom-0 h-[2px] w-full bg-main rounded-md" />}
+                                            {index === i && <div className={styles.separator} />}
                                         </div>
                                     ))}
                                 </TabsList>
