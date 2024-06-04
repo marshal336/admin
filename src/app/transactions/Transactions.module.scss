@@ -1,0 +1,50 @@
+.root {
+    @apply relative top-[100px] xl:left-[320px] left-[100px] max-w-[1300px];
+
+    .container {
+        @apply flex flex-col gap-20;
+
+        .info {
+            .h2 {
+                @apply text-3xl font-semibold
+            }
+
+            @apply flex justify-between;
+
+            .input {
+                @apply relative;
+
+                input {
+                    @apply pl-9 border-main
+                }
+
+                .inputLogo {
+                    @apply absolute top-[13px] left-3
+                }
+            }
+        }
+
+        .stats {
+            @apply flex flex-col gap-5;
+            .transactions {
+                @apply flex justify-between items-center;
+
+                .items {
+                    @apply flex gap-7;
+
+                    .item {
+                        @apply flex flex-col gap-1;
+
+                        h1 {
+                            @apply text-[40px] font-medium
+                        }
+
+                        p {
+                            @apply text-xl font-medium
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

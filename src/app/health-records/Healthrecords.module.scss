@@ -1,0 +1,32 @@
+.root {
+    @apply relative top-[100px] xl:left-[320px] left-[100px] max-w-[1300px];
+
+    .container {
+        @apply flex flex-col gap-12;
+
+        .info {
+            .h2 {
+                @apply text-3xl font-semibold
+            }
+
+            @apply flex justify-between;
+
+            .input {
+                @apply relative;
+
+                input {
+                    @apply pl-9 border-main
+                }
+
+                .inputLogo {
+                    @apply absolute top-[13px] left-3
+                }
+            }
+        }
+
+        .content {
+            @apply flex flex-col
+        }
+
+    }
+}
