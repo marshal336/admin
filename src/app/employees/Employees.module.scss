@@ -1,0 +1,20 @@
+.root {
+    @apply relative top-[100px] xl:left-[320px] left-[100px] max-w-[1300px];
+
+    .container {
+        @apply flex flex-col;
+
+        .h2 {
+            @apply text-3xl font-semibold;
+        }
+
+        .info {
+            @apply flex flex-col gap-4;
+            .selects {
+                @apply flex gap-3 justify-end
+            }
+            .table{
+            }
+        }
+    }
+}

@@ -12,7 +12,7 @@ export const Links = [
     { icon: <LuUserSquare2 />, title: 'Patients management', link: '' },
     { icon: <FaRegCalendarAlt />, title: 'Appointments', link: '' },
     { icon: <VscSettings />, title: 'Transactions', link: '' },
-    { icon: <FaUsers />, title: 'Employers', link: '' },
+    { icon: <FaUsers />, title: 'Employers', link: 'employees' },
     { icon: <MdNewspaper />, title: 'Health records', link: '' },
     { icon: <SiSimpleanalytics />, title: 'Analytics', link: 'analytics' },
     { icon: <IoHelpCircleOutline />, title: 'Help & Support', link: '' },
