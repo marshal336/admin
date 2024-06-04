@@ -14,7 +14,7 @@ export const Links = [
     { icon: <VscSettings />, title: 'Transactions', link: '' },
     { icon: <FaUsers />, title: 'Employers', link: '' },
     { icon: <MdNewspaper />, title: 'Health records', link: '' },
-    { icon: <SiSimpleanalytics />, title: 'Analytics', link: '' },
+    { icon: <SiSimpleanalytics />, title: 'Analytics', link: 'analytics' },
     { icon: <IoHelpCircleOutline />, title: 'Help & Support', link: '' },
     { icon: <FaRegUser />, title: 'Profile', link: '' },
     { icon: <IoSettingsOutline />, title: 'Settings', link: 'settings' },
