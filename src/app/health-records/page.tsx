@@ -1,10 +1,13 @@
 'use client'
-import { IoSearchOutline } from 'react-icons/io5'
+import React from 'react'
 import styles from './Healthrecords.module.scss'
+import { IoSearchOutline } from 'react-icons/io5'
 import { Input } from '~/components/ui/input'
 import { Button } from '~/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui/tabs'
-import React from 'react'
+import { DataTable } from './utils/table.util'
+import { columns } from './utils/colums'
+import { users } from './utils/data'
 
 
 const tabs = ['All', 'Patient Services', 'Diagnostic Services', 'Pharmacy Services']
@@ -35,13 +38,13 @@ export default function HealthRecords() {
                             ))}
                         </TabsList>
                         <TabsContent value={tabs[0]}>
-                            sd
+                            <DataTable columns={columns} data={users} />
                         </TabsContent>
                         <TabsContent value={tabs[1]}>
-                            sdweq
+                            <DataTable columns={columns} data={users} />
                         </TabsContent>
                         <TabsContent value={tabs[2]}>
-                            wsfsfs
+                            <DataTable columns={columns} data={users} />
                         </TabsContent>
                     </Tabs>
                 </div>
