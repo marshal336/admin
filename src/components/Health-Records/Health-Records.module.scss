@@ -1,5 +1,5 @@
 .root {
-    @apply relative top-[100px] xl:left-[320px] left-[100px] max-w-[1300px];
+    @apply relative top-[100px] xl:left-[320px] left-[100px] max-w-[1300px] pr-10;
 
     .container {
         @apply flex flex-col gap-12;
