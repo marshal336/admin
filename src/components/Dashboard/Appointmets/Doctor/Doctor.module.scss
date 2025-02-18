@@ -1,0 +1,39 @@
+.doctor {
+    @apply flex justify-between items-center pr-4 sm:w-[600px] w-[440px];
+
+    .doctorLogo {
+        @apply rounded-full border-[2px] border-[--main]
+    }
+
+    .doctorInfo {
+        @apply flex flex-col gap-1;
+
+        .doctorName {
+            @apply font-semibold text-base
+        }
+
+        .doctorSpetialty {
+            @apply font-normal text-[15px]
+        }
+
+        .workTime {
+            @apply flex gap-2 items-center
+        }
+    }
+
+    .btns {
+        @apply flex flex-col gap-3;
+
+        .btn {
+            @apply flex gap-2 items-center;
+
+            .h5 {
+                @apply text-base;
+            }
+
+            svg {
+                @apply p-1 text-xl rounded-full;
+            }
+        }
+    }
+}

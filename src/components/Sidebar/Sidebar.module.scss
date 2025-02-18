@@ -6,7 +6,7 @@
             @apply flex gap-1 items-center mb-[41px];
 
             .h2 {
-                @apply text-main text-2xl xl:block;
+                @apply text-[--main] text-2xl xl:block;
             }
 
             .img {
@@ -18,7 +18,7 @@
             @apply flex flex-col gap-3 3xl:mb-[130px] mb-[70px];
 
             .info-item {
-                @apply flex xl:justify-start h-[55px] gap-6 items-center px-3 py-3 rounded-md font-bold text-lg hover:bg-main hover:text-white;
+                @apply flex xl:justify-start h-[55px] gap-6 items-center px-3 py-3 rounded-md font-bold text-lg hover:bg-[--main] hover:text-white;
 
                 svg {
                     @apply text-xl;
@@ -30,7 +30,7 @@
             }
 
             .index-color {
-                @apply bg-main text-white;
+                @apply bg-[--main] text-white;
             }
 
             .separator {

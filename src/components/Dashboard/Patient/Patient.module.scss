@@ -1,0 +1,11 @@
+.patient {
+    @apply col-start-1 lg:col-end-3 col-end-5 p-4 bg-[--background] rounded-md flex flex-col gap-12 3xl:w-[807px] w-auto;
+
+    .info {
+        @apply flex justify-between items-center border-b-[--radio-border] border-b mb-5;
+
+        .separator {
+            @apply absolute bottom-0 h-[2px] w-full bg-main rounded-md;
+        }
+    }
+}

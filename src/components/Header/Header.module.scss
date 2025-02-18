@@ -1,5 +1,5 @@
 .header {
-    @apply fixed left-0 right-0 top-0 w-full border-b border-b-[--radio-border] py-[15px] px-4 bg-[--bg] text-[--text] z-[1] ;
+    @apply fixed left-0 right-0 top-0 w-full border-b border-b-[--radio-border] py-[15px] px-4 bg-[--bg] text-[--text] z-[1];
 
     .container {
         @apply flex justify-end items-center max-w-[1600px];
@@ -16,7 +16,7 @@
             }
 
             .logo {
-                @apply rounded-full border-[2px] border-[#0AC60A];
+                @apply rounded-full border-[2px] border-[--main];
             }
 
             svg {

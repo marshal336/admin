@@ -1,21 +1,32 @@
 import Image from "next/image"
 import { FaCheck, FaStopwatch } from "react-icons/fa"
 import { IoCloseCircleOutline } from "react-icons/io5"
+import styles from './Doctor.module.scss'
 
 const status = [
     {
         title: 'Accept',
-        el: <FaCheck className='bg-main text-[--foreground]' />
+        el: <FaCheck className='bg-[--bg] text-[--text]' />
     },
     {
         title: 'Decline',
-        el: <IoCloseCircleOutline className='bg-[#D6F8D6] text-[--foreground]' />
+        el: <IoCloseCircleOutline className='text-[--text] bg-[--bg]' />
     }
 ]
-export default function Doctor({ styles }: { styles: any }) {
+
+export default function Doctor() {
     return (
         <div className={styles.doctor}>
-            <Image src={'/my.jpg'} alt='logo' width={63} height={63} className={styles.doctorLogo} />
+            <Image
+                src={'/my.jpg'}
+                alt='logo'
+                width={63}
+                height={63}
+                className={styles.doctorLogo}
+                style={{
+                    borderColor: '#0AC60A'
+                }}
+            />
             <div className={styles.doctorInfo}>
                 <h2 className={styles.doctorName}>Dr Gbenga Akal</h2>
                 <h2 className={styles.doctorSpetialty}>Gyneacologist</h2>

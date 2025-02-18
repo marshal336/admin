@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import { Fragment, useState } from 'react';
 import Image from 'next/image'
 import styles from './Sidebar.module.scss'
 import Link from 'next/link';
@@ -8,19 +8,9 @@ import { useTheme } from 'next-themes';
 
 
 export default function Sidebar() {
-    const { setTheme } = useTheme()
-    const [index, setIndex] = React.useState(0)
-    const [menu, setMenu] = React.useState(false)
-    const [theme, setThemE] = React.useState(false)
-    // const theme = localStorage.getItem('theme')
-    function handleTheme() {
-        setThemE(!theme)
-        if (theme) {
-            setTheme('dark')
-        } else {
-            setTheme('light')
-        }
-    }
+    const { setTheme, theme } = useTheme()
+    const [index, setIndex] = useState(0)
+    const [menu, setMenu] = useState(false)
 
     return (
         <nav className={`${styles.nav} ${!menu ? 'w-[300px]' : 'w-[80px] transition-all'} `}>
@@ -36,10 +26,11 @@ export default function Sidebar() {
                 </div>
                 <div className={styles.info}>
                     {Links.map((el, i) => (
-                        <>
+                        <Fragment
+                            key={i}
+                        >
                             <Link
                                 href={el.link ? el.link : ''}
-                                key={i}
                                 className={`${styles['info-item']} ${menu ? 'justify-center' : "justify-start"}
                             ${(index === i && i !== Links.length - 1) ? styles['index-color'] : ''}`}
                                 onClick={() => setIndex(i)}>
@@ -49,14 +40,15 @@ export default function Sidebar() {
                             {i === 7 && (
                                 <div className={styles.separator} />
                             )}
-                        </>
+                        </Fragment>
                     ))}
                 </div>
                 <div className={`${styles.mode}  ${menu ? 'flex-col gap-2' : ""} `}>
                     <h3 className={`${menu ? 'text-center text-xs' : "font-normal text-lg"} ${styles.h3}`}>Dark Mode</h3>
-                    <div className={`${styles.radio} 
-                    ${theme ? 'justify-start' : 'justify-end'}`}
-                        onClick={handleTheme}>
+                    <div
+                        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+                        className={`${styles.radio} 
+                    ${theme === 'light' ? 'justify-start' : 'justify-end'}`}>
                         <div className={`${styles.circle}`} />
                     </div>
                 </div>

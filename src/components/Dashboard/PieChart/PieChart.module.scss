@@ -1,0 +1,36 @@
+.pie {
+    @apply bg-[--background] p-5 0.5xl:col-start-3 0.5xl:col-end-5 lg:col-start-4 col-start-1 col-end-5 rounded-md 3xl:w-[434px] 3xl:ml-[187px] m-0 w-auto flex flex-col 3xl:gap-10 lg:gap-7 gap-3;
+
+    .info {
+        @apply flex justify-between border-b-[--radio-border] border-b pb-1;
+
+        .h3 {
+            @apply text-lg font-semibold
+        }
+
+        .dots {
+            @apply rotate-90 text-lg cursor-pointer
+        }
+
+    }
+
+    .pieWrapper {
+        @apply 3xl:max-w-[283px] max-w-[183px] flex mx-auto;
+    }
+
+    .stats {
+        @apply flex justify-between 0.5xl:gap-3 gap-1 0.5xl:text-left text-center;
+
+        .item {
+            @apply w-[139px] flex flex-col gap-2 3xl:p-0 0.5xl:px-3 p-0;
+
+            .h2 {
+                @apply 0.5xl:text-xl text-lg text-main;
+            }
+
+            .p {
+                @apply 0.5xl:text-sm text-xs;
+            }
+        }
+    }
+}

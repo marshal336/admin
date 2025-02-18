@@ -1,0 +1,27 @@
+.bar {
+    @apply col-start-1 0.5xl:col-end-3 lg:col-end-4 col-end-5 p-4 bg-[--background] rounded-md flex flex-col gap-12 3xl:w-[807px] w-auto;
+
+    .info {
+        @apply flex justify-between items-center border-b-[--radio-border] border-b pb-3;
+
+        .title {
+            @apply font-semibold;
+        }
+
+        .incomeExpence {
+            @apply flex justify-center items-center gap-3;
+
+            .item {
+                @apply flex items-center gap-3;
+
+                .circle {
+                    @apply rounded-full h-[10px] w-[10px];
+                }
+
+                .h4 {
+                    @apply text-stone-300
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.appointments {
+    @apply bg-[--bg] p-5 lg:col-start-3 col-start-1 col-end-5 rounded-md 3xl:w-[434px] 3xl:ml-[187px] m-0 w-auto flex flex-col 3xl:gap-10 gap-4;
+
+    .info {
+        @apply flex justify-between border-b-[--radio-border] border-b pb-[7px];
+
+        .h3 {
+            @apply text-lg font-semibold
+        }
+
+        .dots {
+            @apply rotate-90 text-lg cursor-pointer
+        }
+
+    }
+
+    .doctors {
+        @apply flex flex-col gap-3 max-h-[202px] overflow-auto;
+    }
+
+}
