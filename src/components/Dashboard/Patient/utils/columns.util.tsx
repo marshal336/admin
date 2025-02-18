@@ -9,16 +9,10 @@ export const columns: ColumnDef<User>[] = [
         cell: (a) => {
             return (
                 <div className="flex gap-3 items-center">
-                    <Image
-                        src={users[a.row.index].name.b}
-                        alt="logo"
-                        width={20}
-                        height={20}
-                        className="rounded-full"
-                        style={{
-                            border: '1px solid #0AC60A'
-                        }}
-                    />
+                    {users[a.row.index].name.b !== ''
+                        ? <Image src={users[a.row.index].name.b} alt="logo" width={20} height={20} className="rounded-full border-[1px] border-[--main]" />
+                        : <div className="w-5 h-5 bg-[--main] rounded-full border" />
+                    }
                     <div className="">{users[a.row.index].name.a}</div>
                 </div>
             )

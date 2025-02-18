@@ -10,11 +10,12 @@
 
         .info {
             @apply flex flex-col gap-4;
+
             .selects {
                 @apply flex gap-3 justify-end
             }
-            .table{
-            }
+
+            .table {}
         }
     }
 }

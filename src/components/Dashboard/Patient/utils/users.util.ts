@@ -11,203 +11,115 @@ export type User = {
 
 export const users = [
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/201',
         patientId: '02566',
-        primaryDoctor: 'Dr Alimi James'
+        primaryDoctor: 'Dr Alimi James',
     },
     {
-        name: {
-            a: 'Janet Paul',
-            b: '/my.jpg'
-        },
+        name: { a: 'Janet Paul', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/54',
         patientId: '13822',
-        primaryDoctor: 'Dr Rita Areogun'
+        primaryDoctor: 'Dr Rita Areogun',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/333',
         patientId: '02566',
-        primaryDoctor: 'Dr Aaron Lekan'
+        primaryDoctor: 'Dr Aaron Lekan',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/231',
         patientId: '12121',
-        primaryDoctor: 'Dr Alimi James'
+        primaryDoctor: 'Dr Alimi James',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/201',
         patientId: '02566',
-        primaryDoctor: 'Dr Alimi James'
+        primaryDoctor: 'Dr Alimi James',
     },
     {
-        name: {
-            a: 'Janet Paul',
-            b: '/my.jpg'
-        },
+        name: { a: 'Janet Paul', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/54',
         patientId: '13822',
-        primaryDoctor: 'Dr Rita Areogun'
+        primaryDoctor: 'Dr Rita Areogun',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/333',
         patientId: '02566',
-        primaryDoctor: 'Dr Aaron Lekan'
+        primaryDoctor: 'Dr Aaron Lekan',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/231',
         patientId: '12121',
-        primaryDoctor: 'Dr Alimi James'
+        primaryDoctor: 'Dr Alimi James',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/201',
         patientId: '02566',
-        primaryDoctor: 'Dr Alimi James'
+        primaryDoctor: 'Dr Alimi James',
     },
     {
-        name: {
-            a: 'Janet Paul',
-            b: '/my.jpg'
-        },
+        name: { a: 'Janet Paul', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/54',
         patientId: '13822',
-        primaryDoctor: 'Dr Rita Areogun'
+        primaryDoctor: 'Dr Rita Areogun',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/333',
         patientId: '02566',
-        primaryDoctor: 'Dr Aaron Lekan'
+        primaryDoctor: 'Dr Aaron Lekan',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/231',
         patientId: '12121',
-        primaryDoctor: 'Dr Alimi James'
+        primaryDoctor: 'Dr Alimi James',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/201',
         patientId: '02566',
-        primaryDoctor: 'Dr Alimi James'
+        primaryDoctor: 'Dr Alimi James',
     },
     {
-        name: {
-            a: 'Janet Paul',
-            b: '/my.jpg'
-        },
+        name: { a: 'Janet Paul', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/54',
         patientId: '13822',
-        primaryDoctor: 'Dr Rita Areogun'
+        primaryDoctor: 'Dr Rita Areogun',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/333',
         patientId: '02566',
-        primaryDoctor: 'Dr Aaron Lekan'
+        primaryDoctor: 'Dr Aaron Lekan',
     },
     {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
+        name: { a: 'Ola Akintola', b: '' },
         admissionDate: '12-09-2023',
         roomNumber: 'UI/231',
         patientId: '12121',
-        primaryDoctor: 'Dr Alimi James'
+        primaryDoctor: 'Dr Alimi James',
     },
-    {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
-        admissionDate: '12-09-2023',
-        roomNumber: 'UI/201',
-        patientId: '02566',
-        primaryDoctor: 'Dr Alimi James'
-    },
-    {
-        name: {
-            a: 'Janet Paul',
-            b: '/my.jpg'
-        },
-        admissionDate: '12-09-2023',
-        roomNumber: 'UI/54',
-        patientId: '13822',
-        primaryDoctor: 'Dr Rita Areogun'
-    },
-    {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
-        admissionDate: '12-09-2023',
-        roomNumber: 'UI/333',
-        patientId: '02566',
-        primaryDoctor: 'Dr Aaron Lekan'
-    },
-    {
-        name: {
-            a: 'Ola Akintola',
-            b: '/my.jpg'
-        },
-        admissionDate: '12-09-2023',
-        roomNumber: 'UI/231',
-        patientId: '12121',
-        primaryDoctor: 'Dr Alimi James'
-    },
-]
+];
