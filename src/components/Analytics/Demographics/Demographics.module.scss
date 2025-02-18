@@ -1,0 +1,35 @@
+.demographics {
+    @apply flex flex-col bg-[--bg];
+
+    .info {
+        @apply flex justify-between border-b-[--radio-border] border-b p-4;
+
+        .h3 {
+            @apply text-lg font-semibold
+        }
+
+        .dots {
+            @apply rotate-90 text-lg cursor-pointer
+        }
+    }
+
+    .pie {
+        @apply h-[239px] mx-auto py-5
+    }
+
+    .stats {
+        @apply flex justify-between px-5 py-4 border-t border-t-[--radio-border] mt-auto;
+
+        .item {
+            @apply flex gap-3 items-center uppercase;
+
+            .dot {
+                @apply rounded-full w-3 h-3 bg-violet-400;
+            }
+
+            .h3 {
+                @apply text-sm
+            }
+        }
+    }
+}

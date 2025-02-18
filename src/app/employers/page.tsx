@@ -40,7 +40,7 @@ export default function Employees() {
                         </Select>
                     </div>
                     <div className={styles.table}>
-                        <DataTable columns={columns} data={users}/>
+                        <DataTable columns={columns} data={users} />
                     </div>
                 </div>
             </div>

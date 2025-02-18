@@ -1,0 +1,39 @@
+.equlpment {
+    @apply max-h-[350px] overflow-y-scroll bg-[--bg];
+
+    .info {
+        @apply flex justify-between border-b-[--radio-border] border-b p-4;
+
+        .h3 {
+            @apply text-lg font-semibold
+        }
+
+        .dots {
+            @apply rotate-90 text-lg cursor-pointer
+        }
+    }
+
+    .items {
+        @apply flex flex-col gap-3 px-3;
+
+        .item {
+            @apply flex items-center py-3 gap-5;
+
+            .logo {
+                @apply text-3xl text-main
+            }
+
+            .inf {
+                @apply flex flex-col gap-1;
+
+                h3 {
+                    @apply text-sm font-semibold
+                }
+
+                p {
+                    @apply text-xs font-normal
+                }
+            }
+        }
+    }
+}

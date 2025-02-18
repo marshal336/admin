@@ -1,0 +1,15 @@
+.root {
+    @apply relative xl:left-[320px] left-[100px] top-[100px] max-w-[1300px] pr-10 bg-[--bg];
+
+    .container {
+        @apply flex flex-col gap-4;
+
+        .h1 {
+            @apply font-semibold text-3xl
+        }
+
+        .Grid {
+            @apply grid grid-cols-4 gap-3;
+        }
+    }
+}

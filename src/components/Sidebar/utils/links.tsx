@@ -8,11 +8,11 @@ import { LucideUserSquare2 } from "lucide-react";
 
 
 export const Links = [
-    { icon: <MdOutlineDashboard />, title: 'Dashboard', link: '/' },
+    { icon: <MdOutlineDashboard />, title: 'Dashboard', link: 'dashboard' },
     { icon: <LucideUserSquare2 />, title: 'Patients management', link: 'patients-management' },
     { icon: <FaRegCalendarAlt />, title: 'Appointments', link: 'appointments' },
     { icon: <VscSettings />, title: 'Transactions', link: 'transactions' },
-    { icon: <FaUsers />, title: 'Employers', link: 'employees' },
+    { icon: <FaUsers />, title: 'Employers', link: 'employers' },
     { icon: <MdNewspaper />, title: 'Health records', link: 'health-records' },
     { icon: <SiSimpleanalytics />, title: 'Analytics', link: 'analytics' },
     { icon: <IoHelpCircleOutline />, title: 'Help & Support', link: 'help-&-support' },

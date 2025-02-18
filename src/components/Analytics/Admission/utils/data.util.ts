@@ -1,4 +1,3 @@
-
 export type User = {
     date: string
     totalAdmission: number;
@@ -7,7 +6,6 @@ export type User = {
     averageLengthOfStay: string;
     netAdmissionChange: string;
 }
-
 export const users: User[] = [
     {
         date: 'Sep 9, 2023',

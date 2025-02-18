@@ -5,12 +5,14 @@ import styles from './Sidebar.module.scss'
 import Link from 'next/link';
 import { Links } from './utils/links';
 import { useTheme } from 'next-themes';
+import { usePathname } from 'next/navigation';
 
 
 export default function Sidebar() {
+    const pageName = usePathname()
     const { setTheme, theme } = useTheme()
-    const [index, setIndex] = useState(0)
     const [menu, setMenu] = useState(false)
+    console.log(pageName);
 
     return (
         <nav className={`${styles.nav} ${!menu ? 'w-[300px]' : 'w-[80px] transition-all'} `}>
@@ -32,8 +34,7 @@ export default function Sidebar() {
                             <Link
                                 href={el.link ? el.link : ''}
                                 className={`${styles['info-item']} ${menu ? 'justify-center' : "justify-start"}
-                            ${(index === i && i !== Links.length - 1) ? styles['index-color'] : ''}`}
-                                onClick={() => setIndex(i)}>
+                            ${((pageName.includes(el.link ?? '') && i !== Links.length - 1)) ? styles['index-color'] : ''}`}>
                                 {el.icon}
                                 <h3 className={`${styles.h3} ${menu ? 'hidden' : ""}`}>{el.title}</h3>
                             </Link>
@@ -46,7 +47,9 @@ export default function Sidebar() {
                 <div className={`${styles.mode}  ${menu ? 'flex-col gap-2' : ""} `}>
                     <h3 className={`${menu ? 'text-center text-xs' : "font-normal text-lg"} ${styles.h3}`}>Dark Mode</h3>
                     <div
-                        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+                        onClick={() => {
+                            setTheme(theme === 'light' ? 'dark' : 'light')
+                        }}
                         className={`${styles.radio} 
                     ${theme === 'light' ? 'justify-start' : 'justify-end'}`}>
                         <div className={`${styles.circle}`} />

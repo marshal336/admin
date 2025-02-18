@@ -1,16 +1,17 @@
 import { ChartData } from "chart.js";
+import { generateDynamicData } from "~/utils";
 
 export const dataBar: ChartData<"bar", number[], string> = {
     labels: ["JAN", "FEB", "MAR", "APRIL", "MAY", "JUNE"],
     datasets: [
         {
-            data: [10, 22, 4, 8, 20, 12],
+            data: generateDynamicData(8),
             backgroundColor: '#0AC60A',
             borderRadius: 60,
             barPercentage: 0.7,
         },
         {
-            data: [8, 12, 4, 8, 16, 23],
+            data: generateDynamicData(8),
             backgroundColor: "#D6F8D6",
             borderRadius: 60,
             barPercentage: 0.7

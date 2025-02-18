@@ -16,7 +16,9 @@ export default function Appointments({ }: IAppointmentsProps) {
                 <div className={styles.dots}>...</div>
             </div>
             <div className={styles.doctors}>
-                <Doctor />
+                {[...new Array(10)].map((_, i) => (
+                    <Doctor key={i} />
+                ))}
             </div>
         </Card>
     )
