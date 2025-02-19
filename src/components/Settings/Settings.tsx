@@ -6,6 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { links } from './utils';
 import { useState } from 'react';
 import { Notification } from './Notification';
+import { cn } from '~/lib/utils';
 
 export default function Settings() {
     const [input, setInput] = useState('')
@@ -20,17 +21,18 @@ export default function Settings() {
                         <div className={styles.input}>
                             <IoSearchOutline className={styles.icon} />
                             <Input
+                                className='!bg-transparent'
                                 placeholder='Search setting'
                                 value={input}
                                 onChange={e => setInput(e.target.value)} />
                         </div>
-                        <TabsList className={styles.links}>
+                        <TabsList className={cn(styles.links, '!bg-transparent')}>
                             {links.filter(el => el.value.toLowerCase().includes(input.toLowerCase())).map(({ value }, i) => (
                                 <TabsTrigger
                                     onClick={() => setIndex(i)}
                                     value={value}
                                     key={i}
-                                    className={styles.link}>
+                                    className={cn(styles.link, '!bg-transparent')}>
                                     <p>{value}</p>
                                     <IoIosArrowForward />
                                 </TabsTrigger>

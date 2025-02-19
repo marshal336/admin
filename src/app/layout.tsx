@@ -18,16 +18,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} relative`}>
-        {/* <ThemeProvider
+        <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        > */}
-        <Header />
-        <Sidebar />
-        {children}
-        {/* </ThemeProvider> */}
+        >
+          <Header />
+          <Sidebar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -17,7 +17,7 @@ export default function SelectC({
             </SelectTrigger>
             <SelectContent className='bg-[--bg]'>
                 {variants.map((value, i) => (
-                    <SelectItem value={value}>{value}</SelectItem>
+                    <SelectItem key={i} value={value}>{value}</SelectItem>
                 ))}
             </SelectContent>
         </Select>

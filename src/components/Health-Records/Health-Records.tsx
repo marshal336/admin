@@ -29,7 +29,7 @@ export default function HealthRecords() {
                     <Tabs defaultValue={tabs[0]}>
                         <TabsList>
                             {tabs.map((el, i) => (
-                                <TabsTrigger value={el} className={`relative rounded-none`} onClick={() => setIndex(i)}>
+                                <TabsTrigger key={i} value={el} className={`relative rounded-none`} onClick={() => setIndex(i)}>
                                     <p className={i === index ? 'text-[--main]' : ''}>{el}</p>
                                     {i === index && <div className="absolute bottom-0 w-full h-[3px] bg-[--main]" />}
                                 </TabsTrigger>

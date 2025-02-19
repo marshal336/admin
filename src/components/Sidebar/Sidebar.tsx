@@ -12,7 +12,6 @@ export default function Sidebar() {
     const pageName = usePathname()
     const { setTheme, theme } = useTheme()
     const [menu, setMenu] = useState(false)
-    console.log(pageName);
 
     return (
         <nav className={`${styles.nav} ${!menu ? 'w-[300px]' : 'w-[80px] transition-all'} `}>
