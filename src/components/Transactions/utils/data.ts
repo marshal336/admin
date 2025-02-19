@@ -95,3 +95,10 @@ export const data: Transaction[] = [
     },
 
 ]
+
+export const transactions = [
+    { h1: '21890', p: 'Success Transactions' },
+    { h1: '180', p: 'Failed Transactions' },
+    { h1: '23890', p: 'Total Transactions' },
+    { h1: '1890', p: 'Pending Transactions' },
+];

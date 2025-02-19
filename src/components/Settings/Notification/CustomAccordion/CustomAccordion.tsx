@@ -3,15 +3,15 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "~/components/ui/accordion"
+} from "~/components/ui"
+import styles from './CustomAccordion.module.scss'
 
 interface ICustomAccordionProps {
-    styles: any
     el: JSX.Element;
     title: string;
     descriprion: string;
 }
-export default function CustomAccordion({ styles, descriprion, el, title }: ICustomAccordionProps) {
+export default function CustomAccordion({ descriprion, el, title }: ICustomAccordionProps) {
     return (
         <Accordion type="single" collapsible className={styles.accordion}>
             <AccordionItem value="item-1">

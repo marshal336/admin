@@ -3,7 +3,6 @@ import { IoMdOptions } from "react-icons/io";
 import { FaFish } from "react-icons/fa6";
 import { CgScreenMirror } from "react-icons/cg";
 
-
 export const links = [
     { value: 'Access and permission' },
     { value: 'Language settings' },

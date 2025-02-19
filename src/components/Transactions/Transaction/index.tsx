@@ -3,7 +3,7 @@ interface ITransactionsProps {
     h1: string
     p: string
 }
-export default function Transactions({ styles, h1, p }: ITransactionsProps) {
+export default function Transaction({ styles, h1, p }: ITransactionsProps) {
     return (
         <div className={styles.item}>
             <h1>{h1}</h1>

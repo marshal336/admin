@@ -1,11 +1,6 @@
+import { CustomAccordion } from './CustomAccordion'
 import styles from './Notification.module.scss'
-import { VscSettings } from "react-icons/vsc";
-import { IoMdOptions } from "react-icons/io";
-import { FaFish } from "react-icons/fa6";
-import { CgScreenMirror } from "react-icons/cg";
-import { accordions } from '../links.util';
-import CustomAccordion from './utils/accordion.util';
-
+import { accordions } from './utils'
 
 export default function Notification() {
     return (
@@ -17,7 +12,7 @@ export default function Notification() {
                 </div>
                 <div className={styles.accordions}>
                     {accordions.map((el, i) => (
-                        <CustomAccordion {...el} styles={styles} key={i} />
+                        <CustomAccordion {...el} key={i} />
                     ))}
                 </div>
             </div>
